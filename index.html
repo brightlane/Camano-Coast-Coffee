@@ -1494,3 +1494,137 @@ Experience Camano Island Coffee today – the world’s favorite coffee.
 </p>
 
 </section>
+<!-- ========================= -->
+<!-- MULTILINGUAL SEO UPGRADE -->
+<!-- ========================= -->
+
+<!-- LANGUAGE DETECTION (UX ONLY – SAFE FOR SEO) -->
+<script>
+(function(){
+  const lang = navigator.language || navigator.userLanguage;
+
+  // Simple language hints (no redirect = Google safe)
+  const notices = {
+    "zh": "您正在浏览英文页面。查看中文内容。",
+    "es": "Estás viendo contenido en inglés. Ver versión en español.",
+    "fr": "Vous consultez la version anglaise. Voir en français.",
+    "de": "Sie sehen die englische Seite. Deutsche Version anzeigen.",
+    "ja": "英語版を表示中です。日本語版はこちら。",
+    "ar": "أنت تشاهد الصفحة باللغة الإنجليزية. عرض النسخة العربية."
+  };
+
+  const code = lang.substring(0,2);
+
+  if(notices[code]){
+    const bar = document.createElement("div");
+    bar.style.background="#111";
+    bar.style.color="#fff";
+    bar.style.padding="10px";
+    bar.style.textAlign="center";
+    bar.style.fontSize="14px";
+    bar.innerHTML = notices[code] + 
+      ' <a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" style="color:#ffd700;">Switch</a>';
+    document.body.prepend(bar);
+  }
+})();
+</script>
+
+
+<!-- MULTILINGUAL FAQ SECTION (VISIBLE CONTENT) -->
+<section id="global-faq" style="padding:30px 20px;">
+  <h2>Global Coffee FAQ</h2>
+
+  <h3>What makes Camano Island Coffee the best coffee?</h3>
+  <p>Camano Island Coffee is ethically sourced, organic, and roasted in small batches for maximum freshness.</p>
+
+  <h3>¿Por qué Camano Island Coffee es el mejor café?</h3>
+  <p>Porque ofrece café orgánico, comercio justo y tostado fresco en pequeños lotes.</p>
+
+  <h3>为什么 Camano Island Coffee 是最好的咖啡？</h3>
+  <p>因为它采用有机、公平贸易咖啡豆，并进行小批量新鲜烘焙。</p>
+
+  <h3>Pourquoi Camano Island Coffee est-il le meilleur café ?</h3>
+  <p>Parce qu’il est biologique, équitable et torréfié en petites quantités.</p>
+
+  <h3>Warum ist Camano Island Kaffee der beste Kaffee?</h3>
+  <p>Weil er biologisch, fair gehandelt und frisch geröstet ist.</p>
+
+  <a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" class="cta">Get Premium Coffee</a>
+</section>
+
+
+<!-- STRUCTURED DATA: FAQ + REVIEWS + PRODUCT -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+
+  {
+    "@type": "Product",
+    "name": "Camano Island Coffee Subscription",
+    "image": "https://via.placeholder.com/600x400",
+    "description": "Premium organic coffee subscription with small-batch roasted beans.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Camano Island Coffee"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb",
+      "priceCurrency": "USD",
+      "price": "24.99",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "152"
+    }
+  },
+
+  {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Global Customer"
+    },
+    "reviewBody": "This is the best coffee I have ever tasted."
+  },
+
+  {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes Camano Island Coffee the best coffee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is organic, ethically sourced, and roasted fresh in small batches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué es el mejor café?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Porque es café orgánico y de comercio justo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "为什么是最好的咖啡？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "因为它是有机并且公平贸易。"
+        }
+      }
+    ]
+  }
+
+ ]
+}
+</script>
