@@ -199,7 +199,7 @@
       <div class="hero-content">
         <h1>Fresh Organic Coffee Delivered to Your Door</h1>
         <p>Experience premium small-batch roasted coffee from Camano Island Coffee. Choose your favorite roast and enjoy free shipping and fast delivery.</p>
-        <a href="#subscribe" class="cta">Subscribe Now</a>
+        <a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" class="cta">Subscribe Now</a>
 
         <div class="hero-review">
           <h3>Customer Review</h3>
@@ -224,7 +224,7 @@
     </div>
   </header>
 
-  <a href="#subscribe" class="sticky-cta">Subscribe Now</a>
+  <a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" class="sticky-cta">Subscribe Now</a>
 
   <!-- Comparison Table Section -->
   <section class="container">
@@ -277,34 +277,81 @@
     </div>
   </section>
 
-  <!-- Blog Snippets -->
+  <!-- How-To Brew Section -->
   <section class="container">
-    <h2>From Our Blog</h2>
-    <div class="blog-snippets">
-      <div class="blog-snippet">
-        <h3><a href="#">5 Ways to Brew the Perfect Cup</a></h3>
-        <p>Learn how to get the most flavor from your coffee beans with these easy steps.</p>
+    <h2>How to Brew Your Perfect Cup</h2>
+    <div class="howto-step">
+      <div class="howto-title">1. Choose Your Coffee</div>
+      <div class="howto-content">
+        <div class="coffee-item" style="display:inline-block; margin-bottom:10px;">
+          <img src="https://via.placeholder.com/80x80?text=Beans" alt="Coffee Beans">
+          <div class="steam"></div><div class="steam"></div><div class="steam"></div>
+        </div>
+        Select your preferred roast—dark, medium, or light. Freshly ground beans give the richest flavor.
       </div>
-      <div class="blog-snippet">
-        <h3><a href="#">The Journey of Organic Coffee</a></h3>
-        <p>Explore how our organic coffee is sourced from farm to cup sustainably.</p>
+    </div>
+    <div class="howto-step">
+      <div class="howto-title">2. Measure the Coffee</div>
+      <div class="howto-content">
+        Use 1-2 tablespoons of coffee per 6 oz of water, depending on your strength preference.
+      </div>
+    </div>
+    <div class="howto-step">
+      <div class="howto-title">3. Boil Water</div>
+      <div class="howto-content">
+        Heat water to around 200°F (just below boiling) for optimal extraction.
+      </div>
+    </div>
+    <div class="howto-step">
+      <div class="howto-title">4. Brew</div>
+      <div class="howto-content">
+        Pour hot water over your coffee grounds and let it steep for 4-5 minutes, or use your preferred method.
+      </div>
+    </div>
+    <div class="howto-step">
+      <div class="howto-title">5. Enjoy</div>
+      <div class="howto-content">
+        Pour your coffee into a favorite mug, savor the aroma, and enjoy a perfect cup of Camano Island Coffee.
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="container">
-    &copy; 2026 Camano Island Coffee. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a>
+  <!-- Blog Snippets -->
+  <section class="container blog-snippets">
+    <div class="blog-snippet">
+      <a href="#">5 Tips for Storing Coffee Beans Fresh</a>
+    </div>
+    <div class="blog-snippet">
+      <a href="#">Understanding Roast Levels: Light, Medium, Dark</a>
+    </div>
+    <div class="blog-snippet">
+      <a href="#">Camano Island Coffee: Our Organic Journey</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Camano Island Coffee. All rights reserved.
   </footer>
 
-  <!-- Optional JS for FAQ toggle -->
+  <!-- JS for FAQ & How-To toggle -->
   <script>
-    document.querySelectorAll('.faq-question').forEach(q => {
-      q.addEventListener('click', () => {
-        const a = q.nextElementSibling;
-        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+    document.querySelectorAll('.faq-question, .howto-title').forEach(item => {
+      item.addEventListener('click', () => {
+        const content = item.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
       });
     });
+
+    // Optional: Daily tip rotation
+    const tips = [
+      "Store coffee beans in an airtight container away from light.",
+      "Grind your coffee just before brewing for maximum freshness.",
+      "Use filtered water for better tasting coffee.",
+      "Pre-warm your mug to keep coffee hotter longer."
+    ];
+    const tipEl = document.getElementById("tip");
+    let tipIndex = 0;
+    setInterval(() => { tipIndex = (tipIndex+1)%tips.length; tipEl.textContent = tips[tipIndex]; }, 7000);
   </script>
 </body>
 </html>
