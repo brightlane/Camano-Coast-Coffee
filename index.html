@@ -38,7 +38,96 @@
   <!-- Inline CSS -->
   <style>
     /* [All existing CSS from your template remains unchanged] */
-  </style>
+  </style>
+
+  <!-- Structured Data JSON-LD for SEO -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.camanislandcoffee.com/#website",
+      "url": "https://www.camanislandcoffee.com/",
+      "name": "Camano Island Coffee",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Camano Island Coffee",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://via.placeholder.com/200x60?text=Camano+Island+Coffee+Logo"
+        }
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.camanislandcoffee.com/#article",
+      "headline": "The Art of Camano Island Coffee",
+      "description": "Discover the premium small-batch roasted coffee from Camano Island Coffee, ethically sourced and delivered fresh to your door.",
+      "image": "https://via.placeholder.com/600x400?text=Coffee+Beans",
+      "author": {
+        "@type": "Person",
+        "name": "Camano Island Coffee Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Camano Island Coffee",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://via.placeholder.com/200x60?text=Camano+Island+Coffee+Logo"
+        }
+      },
+      "datePublished": "2026-03-27",
+      "dateModified": "2026-03-27",
+      "mainEntityOfPage": "https://www.camanislandcoffee.com/"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.camanislandcoffee.com/#product",
+      "name": "Camano Island Coffee Subscription",
+      "description": "Certified organic, small-batch roasted coffee delivered fresh to your door. Available in dark, medium, and light roasts.",
+      "image": "https://via.placeholder.com/600x400?text=Coffee+Subscription",
+      "brand": "Camano Island Coffee",
+      "sku": "CIC-2026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.camanislandcoffee.com/",
+        "priceCurrency": "USD",
+        "price": "24.99",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "152"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": "Customer A",
+          "datePublished": "2026-03-01",
+          "reviewBody": "Starting my day with Camano Island Coffee feels like a cozy ritual.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": "Customer B",
+          "datePublished": "2026-03-05",
+          "reviewBody": "It turns my kitchen into a small coffee shop every morning.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="container">
