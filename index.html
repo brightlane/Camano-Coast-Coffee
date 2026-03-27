@@ -187,3 +187,25 @@
     "fr": {"hero-title":"Découvrez le Café de l'Île Camano Aujourd'hui","hero-desc":"Grains de café premium fraîchement torréfiés livrés directement chez vous. Parfait pour la maison ou offrir.","hero-cta":"Commander Maintenant","testimonials-title":"Ce que disent nos clients","testimonial-1":"Le meilleur café que j'ai jamais goûté! Arôme frais et saveur riche. – Jane D.","testimonial-2":"Livraison rapide et excellent service client. – John S.","compare-title":"Comparez Nos Meilleures Ventes","faq-title":"Foire Aux Questions","howto-title":"Comment Préparer le Café de l'Île Camano","tips-title":"Conseils Quotidiens sur le Café","blog-title":"Dernières Infos Café"},
     "de": {"hero-title":"Erleben Sie Camano Island Coffee Heute","hero-desc":"Frisch geröstete Premium-Kaffeebohnen direkt zu Ihnen nach Hause geliefert. Perfekt zum Selberbrühen oder Verschenken.","hero-cta":"Jetzt Bestellen","testimonials-title":"Was unsere Kunden sagen","testimonial-1":"Bester Kaffee, den ich je hatte! Reiches Aroma und frischer Geschmack. – Jane D.","testimonial-2":"Schneller Versand und ausgezeichneter Kundenservice. – John S.","compare-title":"Vergleichen Sie Unsere Bestseller","faq-title":"Häufig Gestellte Fragen","howto-title":"Wie man Camano Island Coffee zubereitet","tips-title":"Tägliche Kaffeetipps","blog-title":"Neueste Kaffee-Insights"},
     "ko": {"hero-title":"카마노 아일랜드 커피 체험","hero-desc":"신선하게 로스팅된 프리미엄 커피 원두를 바로 집으로 배송합니다. 가정용이나 선물용으로 완벽합니다.","hero-cta":"지금 주문","testimonials-title":"고객 리뷰","testimonial-1":"내가 지금까지 마신 최고의 커피! 풍부한 향과 신선한 맛. – Jane D.","testimonial-2":"빠른 배송과 훌륭한 고객 서비스. – John S.","compare-title":"베스트셀러 비교","faq-title":"자주 묻는 질문
+","howto-title":"카마노 아일랜드 커피를 브루잉하는 방법","tips-title":"일일 커피 팁","blog-title":"최신 커피 인사이트"},
+    "zh": {"hero-title":"立即体验卡马诺岛咖啡","hero-desc":"新鲜烘焙的优质咖啡豆直接送到您家门口，适合家庭冲泡或送礼。","hero-cta":"立即订购","testimonials-title":"客户评价","testimonial-1":"我喝过的最棒的咖啡！口感丰富，香气扑鼻。– Jane D.","testimonial-2":"快速发货，优质客户服务。– John S.","compare-title":"比较我们的畅销产品","faq-title":"常见问题","howto-title":"如何冲泡卡马诺岛咖啡","tips-title":"每日咖啡小贴士","blog-title":"最新咖啡资讯"}
+  };
+
+  const userLang = navigator.language.slice(0,2);
+  const lang = translations[userLang] ? userLang : "en";
+  
+  document.getElementById("hero-title").textContent = translations[lang]["hero-title"];
+  document.getElementById("hero-desc").textContent = translations[lang]["hero-desc"];
+  document.getElementById("hero-cta").textContent = translations[lang]["hero-cta"];
+  document.getElementById("testimonials-title").textContent = translations[lang]["testimonials-title"];
+  document.getElementById("testimonial-1").textContent = translations[lang]["testimonial-1"];
+  document.getElementById("testimonial-2").textContent = translations[lang]["testimonial-2"];
+  document.getElementById("compare-title").textContent = translations[lang]["compare-title"];
+  document.getElementById("faq-title").textContent = translations[lang]["faq-title"];
+  document.getElementById("howto-title").textContent = translations[lang]["howto-title"];
+  document.getElementById("tips-title").textContent = translations[lang]["tips-title"];
+  document.getElementById("blog-title").textContent = translations[lang]["blog-title"];
+</script>
+
+</body>
+</html>
