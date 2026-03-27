@@ -15,7 +15,14 @@
   <meta property="og:url" content="https://www.yourdomain.com/camano-island-coffee">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- CSS -->
+  <!-- Hreflang for International SEO -->
+  <link rel="alternate" hreflang="en" href="https://www.yourdomain.com/en/camano-island-coffee">
+  <link rel="alternate" hreflang="es" href="https://www.yourdomain.com/es/camano-island-coffee">
+  <link rel="alternate" hreflang="fr" href="https://www.yourdomain.com/fr/camano-island-coffee">
+  <link rel="alternate" hreflang="de" href="https://www.yourdomain.com/de/camano-island-coffee">
+  <link rel="alternate" hreflang="ko" href="https://www.yourdomain.com/ko/camano-island-coffee">
+  <link rel="alternate" hreflang="zh" href="https://www.yourdomain.com/zh/camano-island-coffee">
+
   <style>
     *, *::before, *::after {margin:0;padding:0;box-sizing:border-box;}
     body {font-family: Arial, sans-serif; line-height:1.6; color:#333; background:#f9f9f9;}
@@ -24,32 +31,41 @@
     img {max-width:100%; height:auto;}
     header, section, footer {padding:40px 20px;}
     .container {max-width:1200px; margin:0 auto;}
+
     .hero {display:flex; flex-direction:column; align-items:center; text-align:center; background:#fff3e6; padding:60px 20px; border-radius:12px;}
     .hero h1 {font-size:2.5rem; margin-bottom:20px;}
     .hero p {font-size:1.2rem; margin-bottom:30px;}
     .hero a.cta {background:#d2691e; color:#fff; padding:15px 30px; border-radius:8px; font-size:1.2rem; transition:0.3s;}
     .hero a.cta:hover {background:#b25214;}
-    .sticky-cta {position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:#d2691e; color:#fff; padding:15px 25px; border-radius:8px; z-index:999; display:none;}
+
+    .sticky-cta {position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:#d2691e; color:#fff; padding:15px 25px; border-radius:8px; z-index:999;}
     @media(max-width:768px){.sticky-cta{display:block;}}
+
     .testimonials {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
     .testimonial {background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
     .testimonial img {border-radius:50%; width:60px; height:60px; margin-bottom:15px;}
     .testimonial p {font-style:italic;}
+
     table {width:100%; border-collapse:collapse; margin-top:20px;}
     th, td {border:1px solid #ddd; padding:12px; text-align:center;}
     th {background:#f4a261; color:#fff;}
+
     .faq-item, .howto-step {margin-bottom:20px;}
     .faq-question, .howto-title {font-weight:bold; cursor:pointer; background:#ffe5d4; padding:10px; border-radius:6px;}
     .faq-answer, .howto-content {display:none; padding:10px; background:#fff; border-radius:6px; margin-top:5px;}
+
     .daily-tips {background:#fff3e6; padding:20px; border-radius:12px; margin-top:20px;}
     .yearly-update {background:#d2691e; color:#fff; padding:10px 20px; display:inline-block; border-radius:8px; margin-bottom:20px;}
+
     .blog-snippets {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px;}
     .blog-snippet {background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
     .blog-snippet h3 {margin-bottom:10px;}
     .blog-snippet p {font-size:0.9rem;}
+
+    #language-selector {position:fixed; top:20px; right:20px; z-index:1000; padding:8px 12px; border-radius:6px; background:#d2691e; color:#fff; cursor:pointer;}
   </style>
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD structured data (SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,22 +89,6 @@
           "reviewRating":{"@type":"Rating","ratingValue":"4.9","bestRating":"5"},
           "author":{"@type":"Person","name":"Jane D."}
         }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type":"Question","name":"What is Camano Island Coffee?","acceptedAnswer":{"@type":"Answer","text":"Premium roasted coffee beans delivered to your door."}},
-          {"@type":"Question","name":"How long does shipping take?","acceptedAnswer":{"@type":"Answer","text":"Typically 3-5 business days in the US."}}
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "name": "How to Brew Camano Island Coffee",
-        "step":[
-          {"@type":"HowToStep","name":"Step 1","text":"Boil water to 200°F."},
-          {"@type":"HowToStep","name":"Step 2","text":"Add coffee grounds to filter."},
-          {"@type":"HowToStep","name":"Step 3","text":"Pour water evenly and enjoy."}
-        ]
       }
     ]
   }
@@ -96,14 +96,17 @@
 </head>
 <body>
 
-<!-- Sticky CTA -->
-<a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" class="sticky-cta">Order Now</a>
+<!-- Language Selector -->
+<div id="language-selector">🌐 Language</div>
 
-<!-- Hero Section -->
+<!-- Sticky CTA -->
+<a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" class="sticky-cta" id="cta-sticky">Order Now</a>
+
+<!-- Hero -->
 <header class="hero container">
-  <div class="yearly-update">Updated 2026</div>
+  <div class="yearly-update" id="yearly-update">Updated 2026</div>
   <h1 id="hero-title">Experience Camano Island Coffee Today</h1>
-  <p id="hero-text">Freshly roasted, premium coffee beans delivered right to your door. Perfect for home brewing or gifting.</p>
+  <p id="hero-desc">Freshly roasted, premium coffee beans delivered right to your door. Perfect for home brewing or gifting.</p>
   <a href="https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb" class="cta" id="hero-cta">Order Now</a>
 </header>
 
@@ -122,16 +125,16 @@
   </div>
 </section>
 
-<!-- Comparison Table -->
+<!-- Comparison -->
 <section class="container">
-  <h2 id="comparison-title">Compare Our Best Sellers</h2>
+  <h2 id="compare-title">Compare Our Best Sellers</h2>
   <table>
     <thead>
       <tr>
-        <th>Product</th>
-        <th>Flavor</th>
-        <th>Price</th>
-        <th>Buy Now</th>
+        <th id="product-col">Product</th>
+        <th id="flavor-col">Flavor</th>
+        <th id="price-col">Price</th>
+        <th id="buy-col">Buy Now</th>
       </tr>
     </thead>
     <tbody>
@@ -151,33 +154,33 @@
   </table>
 </section>
 
-<!-- FAQ Section -->
+<!-- FAQ -->
 <section class="container">
   <h2 id="faq-title">Frequently Asked Questions</h2>
   <div class="faq-item">
-    <div class="faq-question" id="faq1-question">What is Camano Island Coffee?</div>
-    <div class="faq-answer" id="faq1-answer">Premium roasted coffee beans delivered to your door.</div>
+    <div class="faq-question" id="faq-q1">What is Camano Island Coffee?</div>
+    <div class="faq-answer" id="faq-a1">Premium roasted coffee beans delivered to your door.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-question" id="faq2-question">How long does shipping take?</div>
-    <div class="faq-answer" id="faq2-answer">Typically 3-5 business days in the US.</div>
+    <div class="faq-question" id="faq-q2">How long does shipping take?</div>
+    <div class="faq-answer" id="faq-a2">Typically 3-5 business days in the US.</div>
   </div>
 </section>
 
-<!-- HowTo Section -->
+<!-- HowTo -->
 <section class="container">
   <h2 id="howto-title">How to Brew Camano Island Coffee</h2>
   <div class="howto-step">
-    <div class="howto-title" id="step1-title">Step 1</div>
-    <div class="howto-content" id="step1-content">Boil water to 200°F.</div>
+    <div class="howto-title" id="howto-step1-title">Step 1</div>
+    <div class="howto-content" id="howto-step1-content">Boil water to 200°F.</div>
   </div>
   <div class="howto-step">
-    <div class="howto-title" id="step2-title">Step 2</div>
-    <div class="howto-content" id="step2-content">Add coffee grounds to filter.</div>
+    <div class="howto-title" id="howto-step2-title">Step 2</div>
+    <div class="howto-content" id="howto-step2-content">Add coffee grounds to filter.</div>
   </div>
   <div class="howto-step">
-    <div class="howto-title" id="step3-title">Step 3</div>
-    <div class="howto-content" id="step3-content">Pour water evenly and enjoy.</div>
+    <div class="howto-title" id="howto-step3-title">Step 3</div>
+    <div class="howto-content" id="howto-step3-content">Pour water evenly and enjoy.</div>
   </div>
 </section>
 
@@ -187,138 +190,40 @@
   <div id="tip">Tip 1: Store your coffee beans in an airtight container away from sunlight.</div>
 </section>
 
-<!-- Blog Snippets -->
+<!-- Blog -->
 <section class="container">
   <h2 id="blog-title">Latest Coffee Insights</h2>
   <div class="blog-snippets">
     <div class="blog-snippet">
       <h3><a href="#" id="blog1-title">5 Ways to Brew the Perfect Cup</a></h3>
-      <p id="blog1-text">Discover techniques for extracting the most flavor from your coffee beans.</p>
+      <p id="blog1-desc">Discover techniques for extracting the most flavor from your coffee beans.</p>
     </div>
     <div class="blog-snippet">
       <h3><a href="#" id="blog2-title">Why Freshness Matters</a></h3>
-      <p id="blog2-text">Learn how roasting and storage affect your coffee's taste.</p>
+      <p id="blog2-desc">Learn how roasting and storage affect your coffee's taste.</p>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="container">
-  <p id="footer-text">&copy; 2026 Camano Island Coffee. All rights reserved.</p>
+  <p>&copy; 2026 Camano Island Coffee. All rights reserved.</p>
 </footer>
 
-<!-- Scripts -->
 <script>
-  // Language translations (placeholders)
-  const translations = {
-    en: { // English
-      heroTitle: "Experience Camano Island Coffee Today",
-      heroText: "Freshly roasted, premium coffee beans delivered right to your door. Perfect for home brewing or gifting.",
-      heroCTA: "Order Now",
-      testimonialsTitle: "What Our Customers Say",
-      testimonial1: '"Best coffee I\'ve ever had! Rich flavor and fresh aroma." – Jane D.',
-      testimonial2: '"Fast shipping and excellent customer service." – John S.',
-      comparisonTitle: "Compare Our Best Sellers",
-      faqTitle: "Frequently Asked Questions",
-      faq1Q: "What is Camano Island Coffee?",
-      faq1A: "Premium roasted coffee beans delivered to your door.",
-      faq2Q: "How long does shipping take?",
-      faq2A: "Typically 3-5 business days in the US.",
-      howtoTitle: "How to Brew Camano Island Coffee",
-      step1Title: "Step 1",
-      step1Content: "Boil water to 200°F.",
-      step2Title: "Step 2",
-      step2Content: "Add coffee grounds to filter.",
-      step3Title: "Step 3",
-      step3Content: "Pour water evenly and enjoy.",
-      tipsTitle: "Daily Coffee Tips",
-      blogTitle: "Latest Coffee Insights",
-      blog1Title: "5 Ways to Brew the Perfect Cup",
-      blog1Text: "Discover techniques for extracting the most flavor from your coffee beans.",
-      blog2Title: "Why Freshness Matters",
-      blog2Text: "Learn how roasting and storage affect your coffee's taste.",
-      footerText: "&copy; 2026 Camano Island Coffee. All rights reserved."
-    },
-    es: { /* Spanish placeholders */
-      heroTitle: "Experimenta Camano Island Coffee Hoy",
-      heroText: "Granos de café recién tostados, premium, entregados a tu puerta. Perfecto para preparar en casa o regalar.",
-      heroCTA: "Ordenar Ahora",
-      testimonialsTitle: "Lo Que Dicen Nuestros Clientes",
-      testimonial1: '"¡El mejor café que he probado! Sabor rico y aroma fresco." – Jane D.',
-      testimonial2: '"Envío rápido y excelente servicio al cliente." – John S.',
-      comparisonTitle: "Compara Nuestros Más Vendidos",
-      faqTitle: "Preguntas Frecuentes",
-      faq1Q: "¿Qué es Camano Island Coffee?",
-      faq1A: "Granos de café premium recién tostados entregados a tu puerta.",
-      faq2Q: "¿Cuánto tarda el envío?",
-      faq2A: "Normalmente de 3 a 5 días hábiles en EE.UU.",
-      howtoTitle: "Cómo Preparar Camano Island Coffee",
-      step1Title: "Paso 1",
-      step1Content: "Hervir agua a 200°F.",
-      step2Title: "Paso 2",
-      step2Content: "Añadir café molido al filtro.",
-      step3Title: "Paso 3",
-      step3Content: "Verter el agua uniformemente y disfrutar.",
-      tipsTitle: "Consejos Diarios de Café",
-      blogTitle: "Últimas Noticias del Café",
-      blog1Title: "5 Formas de Preparar la Taza Perfecta",
-      blog1Text: "Descubre técnicas para extraer el máximo sabor de tus granos de café.",
-      blog2Title: "Por Qué Importa la Frescura",
-      blog2Text: "Aprende cómo el tostado y almacenamiento afectan el sabor de tu café.",
-      footerText: "&copy; 2026 Camano Island Coffee. Todos los derechos reservados."
-    }
-    // Add more languages here (fr, de, ko, zh) following same pattern
-  };
-
-  // Detect browser language
-  const userLang = navigator.language.slice(0,2); // e.g., "en"
-  const lang = translations[userLang] ? userLang : 'en'; // fallback to English
-
-  // Apply translations
-  const t = translations[lang];
-  document.getElementById('hero-title').textContent = t.heroTitle;
-  document.getElementById('hero-text').textContent = t.heroText;
-  document.getElementById('hero-cta').textContent = t.heroCTA;
-  document.getElementById('testimonials-title').textContent = t.testimonialsTitle;
-  document.getElementById('testimonial1').textContent = t.testimonial1;
-  document.getElementById('testimonial2').textContent = t.testimonial2;
-  document.getElementById('comparison-title').textContent = t.comparisonTitle;
-  document.getElementById('faq-title').textContent = t.faqTitle;
-  document.getElementById('faq1-question').textContent = t.faq1Q;
-  document.getElementById('faq1-answer').textContent = t.faq1A;
-  document.getElementById('faq2-question').textContent = t.faq2Q;
-  document.getElementById('faq2-answer').textContent = t.faq2A;
-  document.getElementById('howto-title').textContent = t.howtoTitle;
-  document.getElementById('step1-title').textContent = t.step1Title;
-  document.getElementById('step1-content').textContent = t.step1Content;
-  document.getElementById('step2-title').textContent = t.step2Title;
-  document.getElementById('step2-content').textContent = t.step2Content;
-  document.getElementById('step3-title').textContent = t.step3Title;
-  document.getElementById('step3-content').textContent = t.step3Content;
-  document.getElementById('tips-title').textContent = t.tipsTitle;
-  document.getElementById('blog-title').textContent = t.blogTitle;
-  document.getElementById('blog1-title').textContent = t.blog1Title;
-  document.getElementById('blog1-text').textContent = t.blog1Text;
-  document.getElementById('blog2-title').textContent = t.blog2Title;
-  document.getElementById('blog2-text').textContent = t.blog2Text;
-  document.getElementById('footer-text').innerHTML = t.footerText;
-
   // FAQ Toggle
   document.querySelectorAll('.faq-question').forEach(q => {
     q.addEventListener('click', () => {
-      const answer = q.nextElementSibling;
-      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      const a = q.nextElementSibling;
+      a.style.display = a.style.display === 'block' ? 'none' : 'block';
     });
   });
-
   // HowTo Toggle
   document.querySelectorAll('.howto-title').forEach(h => {
     h.addEventListener('click', () => {
-      const content = h.nextElementSibling;
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      const c = h.nextElementSibling;
+      c.style.display = c.style.display === 'block' ? 'none' : 'block';
     });
   });
-
   // Daily Tips Rotation
   const tips = [
     "Store coffee beans in an airtight container away from sunlight.",
@@ -332,7 +237,26 @@
     tipIndex = (tipIndex + 1) % tips.length;
     document.getElementById('tip').textContent = tips[tipIndex];
   }, 5000);
-</script>
 
+  // Multi-language translation
+  const translations = {
+    en:{ /* default English, already loaded */ },
+    es:{ "hero-title":"Experimenta Camano Island Coffee Hoy", "hero-desc":"Granos de café premium recién tostados entregados a tu puerta. Perfecto para preparar en casa o regalar.","hero-cta":"Ordenar Ahora","testimonials-title":"Lo que nuestros clientes dicen","testimonial1":"¡El mejor café que he probado! Sabor rico y aroma fresco. – Jane D.","testimonial2":"Envío rápido y excelente servicio al cliente. – John S.","compare-title":"Compara nuestros más vendidos","product-col":"Producto","flavor-col":"Sabor","price-col":"Precio","buy-col":"Comprar","faq-title":"Preguntas Frecuentes","faq-q1":"¿Qué es Camano Island Coffee?","faq-a1":"Granos de café premium recién tostados entregados a tu puerta.","faq-q2":"¿Cuánto tarda el envío?","faq-a2":"Normalmente 3-5 días hábiles en EE.UU.","howto-title":"Cómo preparar Camano Island Coffee","howto-step1-title":"Paso 1","howto-step1-content":"Hervir agua a 200°F.","howto-step2-title":"Paso 2","howto-step2-content":"Agregar café molido al filtro.","howto-step3-title":"Paso 3","howto-step3-content":"Verter el agua de manera uniforme y disfrutar.","tips-title":"Consejos diarios de café","blog-title":"Últimas ideas sobre café","blog1-title":"5 maneras de preparar la taza perfecta","blog1-desc":"Descubre técnicas para extraer el máximo sabor de tus granos de café.","blog2-title":"Por qué la frescura importa","blog2-desc":"Aprende cómo el tostado y almacenamiento afectan el sabor del café."},
+    fr:{ /* ... fill in French translations similarly ... */ },
+    de:{ /* ... fill in German translations ... */ },
+    ko:{ /* ... fill in Korean translations ... */ },
+    zh:{ /* ... fill in Chinese translations ... */ }
+  };
+
+  document.getElementById('language-selector').addEventListener('click', ()=>{
+    const lang = prompt("Enter language code (en, es, fr, de, ko, zh):","es");
+    if(translations[lang]){
+      for(const id in translations[lang]){
+        const el = document.getElementById(id);
+        if(el) el.textContent = translations[lang][id];
+      }
+    }
+  });
+</script>
 </body>
 </html>
