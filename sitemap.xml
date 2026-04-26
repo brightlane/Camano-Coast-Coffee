@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://brightlane.github.io/Camano-Coast-Coffee/</loc>
+        <lastmod>2026-04-25</lastmod> <!-- Last modified date -->
+        <priority>1.00</priority> <!-- Priority of the home page -->
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://brightlane.github.io/Camano-Coast-Coffee/about</loc>
+        <lastmod>2026-04-25</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Products Page -->
+    <url>
+        <loc>https://brightlane.github.io/Camano-Coast-Coffee/products</loc>
+        <lastmod>2026-04-25</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Contact Page -->
+    <url>
+        <loc>https://brightlane.github.io/Camano-Coast-Coffee/contact</loc>
+        <lastmod>2026-04-25</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- Blog Page (if applicable) -->
+    <url>
+        <loc>https://brightlane.github.io/Camano-Coast-Coffee/blog</loc>
+        <lastmod>2026-04-25</lastmod>
+        <priority>0.70</priority>
+    </url>
+
+    <!-- Any other pages you have in your project -->
+    <url>
+        <loc>https://brightlane.github.io/Camano-Coast-Coffee/about/team</loc>
+        <lastmod>2026-04-25</lastmod>
+        <priority>0.60</priority>
+    </url>
+
+    <!-- Add more pages here as necessary -->
+
+</urlset>
