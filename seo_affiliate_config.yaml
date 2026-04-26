@@ -1,0 +1,97 @@
+seo:
+  title: "Camano Island Coffee – Premium Organic Coffee Subscription"
+  description: "Camano Island Coffee delivers certified organic, small-batch roasted coffee straight to your door. Choose from dark, medium, and light roasts with free shipping and fast delivery. Subscribe now using our affiliate link!"
+  keywords:
+    - "Camano Island Coffee"
+    - "organic coffee"
+    - "fair trade coffee"
+    - "subscription coffee"
+    - "premium coffee"
+    - "freshly roasted coffee"
+    - "coffee delivery"
+    - "sustainable coffee"
+  robots: "index, follow"
+  open_graph:
+    title: "Camano Island Coffee – Premium Organic Coffee Subscription"
+    description: "Freshly roasted, certified organic coffee beans from Camano Island Coffee. Delivered to your door with fast, worldwide shipping. Subscribe now using our affiliate link!"
+    image: "https://via.placeholder.com/1200x630?text=Camano+Island+Coffee+Fresh+Roast"
+    url: "https://www.camanislandcoffee.com/"
+  twitter_card:
+    card_type: "summary_large_image"
+    title: "Camano Island Coffee – Premium Organic Coffee Subscription"
+    description: "Small-batch roasted, organic coffee beans delivered to your door. Subscribe now using our affiliate link!"
+    image: "https://via.placeholder.com/1200x630?text=Camano+Island+Coffee"
+
+affiliate_program:
+  url: "https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb"
+  commission_rate: "10%"  # Example commission rate
+  tracking_id: "007949063284005492"
+  description: "Earn a 10% commission on every sale made through your unique affiliate link. Promote Camano Island Coffee and earn passive income."
+
+structured_data:
+  product:
+    name: "Camano Island Coffee"
+    image: "https://via.placeholder.com/1200x630?text=Camano+Island+Coffee"
+    description: "Premium organic coffee subscription. Choose from a variety of roasts with free shipping."
+    sku: "12345"
+    brand:
+      name: "Camano Island Coffee"
+    offers:
+      url: "https://www.linkconnector.com/ta.php?lc=007949063284005492&atid=CamanoIslandCoffeeWeb"  # Affiliate URL
+      priceCurrency: "USD"
+      price: "29.99"
+      priceValidUntil: "2026-12-31"
+      itemCondition: "NewCondition"
+      availability: "InStock"
+      seller:
+        name: "Camano Island Coffee"
+
+hreflang:
+  - language: "en"
+    url: "https://www.camanislandcoffee.com/"
+  - language: "es"
+    url: "https://www.camanislandcoffee.com/es"
+  - language: "fr"
+    url: "https://www.camanislandcoffee.com/fr"
+  - language: "de"
+    url: "https://www.camanislandcoffee.com/de"
+  - language: "zh"
+    url: "https://www.camanislandcoffee.com/zh"
+  - language: "ja"
+    url: "https://www.camanislandcoffee.com/ja"
+  - language: "ru"
+    url: "https://www.camanislandcoffee.com/ru"
+  - language: "ar"
+    url: "https://www.camanislandcoffee.com/ar"
+  - language: "pt"
+    url: "https://www.camanislandcoffee.com/pt"
+
+social_media:
+  twitter:
+    handle: "camaislandcoffee"
+    share_url: "https://twitter.com/intent/tweet?url=https://www.camanislandcoffee.com&text=Check%20out%20Camano%20Island%20Coffee%21%20Premium%20Organic%20Coffee%20Delivered%20to%20Your%20Door"
+  facebook:
+    share_url: "https://www.facebook.com/sharer/sharer.php?u=https://www.camanislandcoffee.com"
+  instagram:
+    handle: "camanislandcoffee"
+    share_url: "https://www.instagram.com/camanislandcoffee"
+  pinterest:
+    share_url: "https://pinterest.com/pin/create/button/?url=https://www.camanislandcoffee.com"
+
+content_management:
+  blog:
+    latest_post:
+      title: "The Best Organic Coffee Subscription – Why Camano Island Coffee Stands Out"
+      url: "https://www.camanislandcoffee.com/blog/best-organic-coffee-subscription"
+      date: "2026-04-25"
+    categories:
+      - "Coffee Subscription"
+      - "Sustainability"
+      - "Roast Guide"
+  promotions:
+    - name: "Free Shipping"
+      description: "Enjoy free worldwide shipping on all coffee orders."
+      valid_until: "2026-12-31"
+    - name: "Discount on First Subscription"
+      description: "Get 10% off your first subscription order."
+      valid_until: "2026-06-30"
